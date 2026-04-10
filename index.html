@@ -48,10 +48,24 @@
     }
 
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
       font-weight: 700;
       letter-spacing: 0.2px;
       color: var(--text);
       text-decoration: none;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .brand span {
+      color: var(--text);
     }
 
     .btn {
@@ -251,7 +265,10 @@
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#">Farghees Tech</a>
+      <a class="brand" href="#" aria-label="Farghees Tech home">
+        <img src="./farghees-logo-icon.svg" alt="Farghees Tech logo" />
+        <span>Farghees Tech</span>
+      </a>
       <a class="btn" href="#contact">Book a Demo</a>
     </div>
   </header>
