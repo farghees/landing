@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farghees Tech — AI Business Automation</title>
+  <meta name="description" content="Farghees Tech helps businesses automate operations with AI — from stock trading automation to Discord integrations and custom business workflows." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f8fbff;
+      --text: #0b1f44;
+      --muted: #4a628f;
+      --primary: #1d4ed8;
+      --primary-soft: #dbeafe;
+      --border: #d7e5ff;
+      --shadow: 0 10px 30px rgba(29, 78, 216, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.95);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid var(--primary);
+      padding: 0.72rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn.secondary {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
+    .hero {
+      padding: 5.5rem 0 4rem;
+      background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 1rem 0 0.75rem;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 860px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .stat {
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong { font-size: 1.2rem; display: block; }
+    .stat span { color: var(--muted); font-size: 0.92rem; }
+
+    section { padding: 4rem 0; }
+
+    .section-title {
+      font-size: clamp(1.45rem, 2.4vw, 2rem);
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.03rem;
+    }
+
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    .abilities {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 1rem;
+    }
+
+    .abilities ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem 1.2rem;
+    }
+
+    .abilities li { color: var(--text); }
+
+    .cta {
+      text-align: center;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cta-box {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    footer {
+      padding: 2rem 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .abilities ul { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding-top: 4.5rem; }
+      .grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+      .btn { width: 100%; text-align: center; }
+      .hero-actions { display: grid; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">Farghees Tech</a>
+      <a class="btn" href="#contact">Book a Demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="hero-tag">AI Business Automation</span>
+        <h1>Automate your business with AI — faster operations, smarter decisions, less manual work.</h1>
+        <p>
+          Farghees Tech builds practical automation systems for modern teams. From stock-trading automation and Discord integrations to reporting, alerts, and workflow orchestration — we help you run lean and scale fast.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#services">Explore Services</a>
+          <a class="btn secondary" href="#abilities">View Capabilities</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong>24/7</strong><span>Automation uptime</span></div>
+          <div class="stat"><strong>Multi-Channel</strong><span>Discord + messaging integrations</span></div>
+          <div class="stat"><strong>AI-Driven</strong><span>Actionable insights and execution</span></div>
+          <div class="stat"><strong>Custom Built</strong><span>Tailored for your workflow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">What we automate</h2>
+        <p class="section-sub">Minimal setup, high impact. We design automation around your real operations — not generic templates.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>AI Stock Trading Automation</h3>
+            <p>Rule-based and AI-assisted workflows for scanning, signals, order execution, and portfolio monitoring.</p>
+          </article>
+          <article class="card">
+            <h3>Discord Business Automation</h3>
+            <p>Bot workflows for alerts, reporting, team ops, customer support actions, and internal command routing.</p>
+          </article>
+          <article class="card">
+            <h3>Sales & Operations Workflows</h3>
+            <p>Automate lead handling, follow-ups, task creation, status updates, and handoff across your tools.</p>
+          </article>
+          <article class="card">
+            <h3>AI Assistant Integration</h3>
+            <p>Deploy private AI assistants that can execute tasks, monitor events, and report in real-time.</p>
+          </article>
+          <article class="card">
+            <h3>Dashboards & Alerts</h3>
+            <p>Live dashboards and smart alerts for metrics, incidents, trades, and business KPIs.</p>
+          </article>
+          <article class="card">
+            <h3>Custom API Orchestration</h3>
+            <p>Connect your existing stack into one smooth automation pipeline — secure, scalable, and maintainable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="abilities">
+      <div class="container">
+        <h2 class="section-title">Core capabilities</h2>
+        <p class="section-sub">Built around the capabilities you’re already using — expanded for business scale.</p>
+        <div class="abilities">
+          <ul>
+            <li>Automated stock monitoring, signal checks, and execution workflows</li>
+            <li>Discord connection for notifications, control commands, and ops updates</li>
+            <li>Portfolio snapshots, trading reports, and performance summaries</li>
+            <li>Business task automation across internal and external tools</li>
+            <li>Scheduled checks, smart alerts, and exception handling flows</li>
+            <li>Marketing and sales process automations</li>
+            <li>Multi-agent orchestration for research, coding, and operations</li>
+            <li>Custom integration with your existing APIs and dashboards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-box">
+        <h2 class="section-title">Launch AI automation for your business</h2>
+        <p class="section-sub">Tell us your workflow. We’ll architect and ship the automation stack that saves time and drives execution.</p>
+        <a class="btn" href="mailto:hello@fargheestech.com">Start with Farghees Tech</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Farghees Tech. AI-powered business automation.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
