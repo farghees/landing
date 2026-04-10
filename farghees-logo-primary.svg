@@ -1,0 +1,13 @@
+<svg width="420" height="96" viewBox="0 0 420 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Farghees Tech Logo</title>
+  <desc id="desc">Minimal blue and white logo with abstract F mark and wordmark</desc>
+
+  <rect x="4" y="8" width="80" height="80" rx="20" fill="#1D4ED8"/>
+  <path d="M28 28H58" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M28 48H52" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M28 28V68" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="4" fill="#93C5FD"/>
+
+  <text x="100" y="47" fill="#0B1F44" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="800" letter-spacing="0.2">Farghees</text>
+  <text x="100" y="73" fill="#1D4ED8" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600" letter-spacing="1.6">TECH</text>
+</svg>
