@@ -181,6 +181,26 @@
 
     .abilities li { color: var(--text); }
 
+    .achievement {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .achievement img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .achievement-note {
+      margin-top: 0.65rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
     .cta {
       text-align: center;
       background: var(--surface);
@@ -198,7 +218,20 @@
       padding: 2rem 0;
       color: var(--muted);
       font-size: 0.93rem;
+      line-height: 1.8;
     }
+
+    .footer-details {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .footer-details a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .footer-details a:hover { text-decoration: underline; }
 
     @media (max-width: 900px) {
       .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -298,17 +331,37 @@
       </div>
     </section>
 
+    <section id="achievements">
+      <div class="container">
+        <h2 class="section-title">Our achievements</h2>
+        <p class="section-sub">Sample snapshot of operational wins and automation outcomes.</p>
+        <div class="achievement">
+          <img src="./achievements-sample.svg" alt="Sample achievements dashboard for Farghees Tech showing automation metrics and performance trend" />
+        </div>
+        <p class="achievement-note">* Sample illustration — can be replaced with real dashboard screenshots anytime.</p>
+      </div>
+    </section>
+
     <section class="cta" id="contact">
       <div class="container cta-box">
         <h2 class="section-title">Launch AI automation for your business</h2>
         <p class="section-sub">Tell us your workflow. We’ll architect and ship the automation stack that saves time and drives execution.</p>
-        <a class="btn" href="mailto:hello@fargheestech.com">Start with Farghees Tech</a>
+        <a class="btn" href="mailto:ai@farghees.com">Start with Farghees Tech</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">© <span id="year"></span> Farghees Tech. AI-powered business automation.</div>
+    <div class="container footer-details">
+      <div>© <span id="year"></span> Farghees Tech (202503108158)</div>
+      <div>No. 1, Jalan P11D/20</div>
+      <div>Presint 11</div>
+      <div>62300 Putrajaya</div>
+      <div><a href="tel:+60199808055">+6019 980 8055</a></div>
+      <div><a href="tel:+60122330380">+6012 233 0380</a></div>
+      <div><a href="mailto:ai@farghees.com">ai@farghees.com</a></div>
+      <div><a href="https://farghees.com" target="_blank" rel="noopener">farghees.com</a></div>
+    </div>
   </footer>
 
   <script>

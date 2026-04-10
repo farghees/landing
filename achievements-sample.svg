@@ -1,0 +1,36 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="24" fill="#F8FBFF"/>
+  <rect x="32" y="28" width="1216" height="52" rx="12" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="56" y="61" fill="#1D4ED8" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="700">Farghees Tech — Achievement Snapshot (Sample)</text>
+
+  <rect x="32" y="104" width="290" height="140" rx="14" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="52" y="148" fill="#0B1F44" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="600">Automations Deployed</text>
+  <text x="52" y="200" fill="#1D4ED8" font-size="46" font-family="Inter, Arial, sans-serif" font-weight="800">128</text>
+
+  <rect x="338" y="104" width="290" height="140" rx="14" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="358" y="148" fill="#0B1F44" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="600">Trade Signals Processed</text>
+  <text x="358" y="200" fill="#1D4ED8" font-size="46" font-family="Inter, Arial, sans-serif" font-weight="800">9,420</text>
+
+  <rect x="644" y="104" width="290" height="140" rx="14" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="664" y="148" fill="#0B1F44" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="600">Discord Workflows</text>
+  <text x="664" y="200" fill="#1D4ED8" font-size="46" font-family="Inter, Arial, sans-serif" font-weight="800">36</text>
+
+  <rect x="950" y="104" width="298" height="140" rx="14" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="970" y="148" fill="#0B1F44" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="600">Operational Uptime</text>
+  <text x="970" y="200" fill="#1D4ED8" font-size="46" font-family="Inter, Arial, sans-serif" font-weight="800">99.9%</text>
+
+  <rect x="32" y="268" width="1216" height="420" rx="14" fill="#FFFFFF" stroke="#D7E5FF"/>
+  <text x="56" y="305" fill="#0B1F44" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="700">30-Day Performance Trend</text>
+
+  <polyline points="76,598 170,560 264,576 358,508 452,528 546,450 640,484 734,410 828,435 922,370 1016,390 1110,335 1204,352"
+            fill="none" stroke="#1D4ED8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="76" y1="620" x2="1204" y2="620" stroke="#D7E5FF" stroke-width="2"/>
+  <line x1="76" y1="620" x2="76" y2="334" stroke="#D7E5FF" stroke-width="2"/>
+
+  <text x="84" y="650" fill="#4A628F" font-size="14" font-family="Inter, Arial, sans-serif">Week 1</text>
+  <text x="360" y="650" fill="#4A628F" font-size="14" font-family="Inter, Arial, sans-serif">Week 2</text>
+  <text x="636" y="650" fill="#4A628F" font-size="14" font-family="Inter, Arial, sans-serif">Week 3</text>
+  <text x="912" y="650" fill="#4A628F" font-size="14" font-family="Inter, Arial, sans-serif">Week 4</text>
+  <text x="1140" y="650" fill="#4A628F" font-size="14" font-family="Inter, Arial, sans-serif">Now</text>
+</svg>
