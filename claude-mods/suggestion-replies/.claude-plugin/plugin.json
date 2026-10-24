@@ -1,0 +1,1 @@
+{ "name": "suggestion-replies", "version": "0.1.0", "description": "Codex-style suggested follow-up replies above the prompt after each Claude answer", "types": "./types/index.d.ts" }
